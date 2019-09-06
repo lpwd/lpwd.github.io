@@ -1,5 +1,8 @@
 $(function(){
 
+
+console.log('---- LOCAL ----');
+
 jQuery.fn.exists = function () {
     return this.length !== 0;
 };
@@ -281,7 +284,10 @@ menu();
 
 const menuItemManager = ()=>{
 
+	console.log( window.location.pathname.split('/') );
 	let page = window.location.pathname.split('/')[ window.location.pathname.split.length ].split('.')[0];
+
+
 
 	const switchCurrentItem = ( path )=>{
 		const dir = './';
@@ -375,6 +381,10 @@ $(document).on("click", ".main-content__page-controlers a", function() {
 
 
 let progressivePagination = ()=>{
+
+
+	if( !$('#main-content__circle-canvas').exists()){ return ;}
+	
 	let counter = document.getElementById('main-content__circle-canvas').getContext('2d');
 	
     var no = $(window).scrollTop(); // Starting Point
