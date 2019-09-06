@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fred Rand - LpWd</title>
+  <!-- <link rel="shortcut icon" href="source/image/favicon.ico"> -->
+
+  <link href="https://fonts.googleapis.com/css?family=Lalezar|Merriweather:300,900|Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="src/style/main.css" />
+
+</head>
+
+
+<body>
+
+<div class="cursor cursor--small"></div>
+<canvas class="cursor cursor--canvas" resize></canvas>
+
+<header class="main-header">
+
+  <div class="main-header__button_container link is-closed">
+    <div class="main-header__lines">
+      <span></span>
+      <span></span>
+    </div>
+
+    <button class="main-header__button heading">
+      <span>Menu</span>
+    </button>
+  </div>
+
+  <div class="main-header__menu">
+    <div class="main-header__bg main-header__bg--1"></div>
+    <div class="main-header__bg main-header__bg--2"></div>
+
+    <div class="main-header__content">
+     <ul class="main-header__menu-list">
+
+        <li class="main-header__menu-item main-header__menu-item is-current">
+          <a href="./index.html" class="link heading trns">
+            Accueil
+          </a>
+        </li>
+
+        <li class="main-header__menu-item  ">
+          <span class="num main-header__num trns">00.</span>
+          <a href="./introduction.html" class="link heading trns">
+            Introduction
+          </a>
+        </li>
+
+        <li class="main-header__menu-item">
+          <span class="num main-header__num trns">01.</span>
+          <a href="./partie-1.html" class="link heading trns">
+            Une agence de design globale
+          </a>
+
+          <ul>
+            <li class="heading"><span class="num">1.1.</span> Sa place, sa force et sa démarche</li>
+            <li class="heading"><span class="num">1.2.</span> Sa vision de la performance</li>
+            <li class="heading"><span class="num">1.3.</span> Son équipe polyvalente</li>
+          </ul>
+        </li>
+
+        <li class="main-header__menu-item">
+          <span class="num main-header__num trns">02.</span>
+          <a href="./partie-2.html" class="link heading trns">
+            Le développement de site internet se simplifie et se banalise : la créativité de ses acteurs mis à mal.
+          </a>
+
+          <ul>
+            <li class="heading"><span class="num">2.1.</span> Des frameworks et libraries pour résoudre tous les problèmes des développeurs ?</li>
+            <li class="heading"><span class="num">2.2.</span> Des templates et builders pour une création de site internet facile et rapide.</li>
+          </ul>
+
+        </li>
+
+        <li class="main-header__menu-item">
+          <span class="num main-header__num trns">03.</span>
+          <a href="./partie-3.html" class="link heading trns">
+            Une valorisation de la créativité dans une branche où le prête à être utilisé est devenu commun.
+          </a>
+
+           <ul>
+            <li class="heading"><span class="num">3.1.</span> L’originalité du design (UX / UI) : un indicateur de la qualité d’un site web.</li>
+            <li class="heading"><span class="num">3.2.</span> Penser animation et interaction : le rôle du Creative Développer.</li>
+          </ul>
+        </li>
+
+        <li class="main-header__menu-item main-header__menu-item">
+          <span class="num main-header__num trns">04.</span>
+          <a href="./partie-4.html" class="link heading trns">
+            Une industrialisation en faveur de l’avènement des web apps et applications mobiles.
+          </a>
+        </li>
+
+         <li class="main-header__menu-item main-header__menu-item">
+          <span class="num main-header__num trns">05.</span>
+          <a href="./conclusion.html" class="link heading trns">
+            Conclusion
+          </a>
+        </li>
+
+
+
+
+      </ul>
+
+
+    </div>
+
+  </div>
+ 
+</header>
+
+
+<main class="main-content">
+
+  <div id="swup" class="main-content__inner">
+
+      <div class="main-content__page-nav transition-up">
+         
+        <div class="main-content__page-nav-inner">
+
+          <div class="main-content__page-nav-content">
+
+            <div class="main-content__page-pagin-contn">
+              <p class="num">02</p>
+              <div></div>
+              <p class="num">05</p>
+            </div>
+
+            <div class="main-content__page-controlers">
+
+              <a class="link main-content__page-link" href="./partie-1.html">
+                <img src="./src/img/icon-prev.svg">
+              </a>
+
+              <a class="link main-content__page-link" href="./partie-3.html">
+                <img src="./src/img/icon-next.svg">
+
+                <div class="main-content__circle-container">
+                  <div id="main-content__circle-active-border" class="main-content__circle-active-border">
+                    <canvas class="counter" width="48" height="48" id="main-content__circle-canvas"></canvas>
+                  </div>
+                </div>
+
+              </a>
+            </div>
+
+            
+            <div class="main-content__page-anchors">
+              <div class="main-content__page-step"><a href="#part1"></a></div>
+               <div class="main-content__page-step"><a href="#part2"></a></div>
+              <div class="main-content__page-step-line"></div>
+            </div>
+          </div>
+         
+
+         
+        
+        </div>
+
+      </div>
+
+    <div class="main-content__page transition-up">
+      <div class="main-content__page-inner">
+        <div class="main-content__page-content text">
+
+          <div class="main-content__title-num-container">
+            <span class="main-content__title-num heading transition-textright delay1">0</span>
+            <span class="main-content__title-num heading transition-textright delay2b">2</span>
+            <span class="main-content__title-num heading transition-textup delay3">.</span>
+          </div>
+
+          <div class="main-content__title-container">
+             <h1 class="main-content__title heading transition-textup delay4">Le développement de site internet se simplifie et se banalise : la créativité de ses acteurs mis à mal.</h1>
+          </div>
+
+          <p id="part1" class="main-content__subtitle-num">2.1.</p>
+          <h2 class="main-content__subtitle">Des frameworks et libraries pour résoudre tous les problèmes des développeurs ?</h2>
+
+          <p>En retraçant l’histoire du développement web on peut se rendre compte qu’elle a beaucoup évolué au fil du temps. Le développement web a connu diverses phases pour arriver là où il en est aujourd’hui. Cette évolution a permis aux codeurs d’évoluer à leur tour dans leur façon de travailler et d’aborder leur métier.</p>
+
+          <p>L’Internet a vu le jour lorsque son inventeur Sir Tim Berners-Lee, un universitaire et scientifique visionnaire a eu la bonne idée de connecter en réseaux des ordinateurs, afin de rendre plus simple le partage d’informations entre ingénieurs travaillant un peu partout sur le globe. Il s’est basé sur une technologie web émergente en son temps pour rendre possible ce partage d’informations entre machines : il s’agit de la technologie Hypertext. Son projet a ensuite donné lieu à l’invention d’un nouveau langage de balisage : le langage HTML (Hypertext Markup Language), destiné à enrichir de l’information textuelle mais sans prendre en compte sa mise en forme ni son ergonomie. Le HTML est devenu la pierre angulaire du World Wide Web puisqu’il est à la base de tout site internet. </p>
+
+          <p>La principale préoccupation était l’accès à l’information et le stockage d’informations. Ainsi, les premières pages des premiers site internets n’étaient constituées que de contenus textuels brut, de liens, de l’information. Le développement web comme on pourrait l’entendre aujourd’hui n’existait pas, les sites internets étaient encore comparables à des documents texte consultable à distance depuis n’importe quel poste d’ordinateur. Il n’y avait pas lieu non plus de parler de conception visuelle, ni de webdesign puisqu’il n’existait que très peu de technologies capables de gérer la mise en forme et l’aspect esthétique des pages web.</p>
+
+          <p>L’arrivée et la prolifération des ordinateurs personnel au sein des ménages a eu pour effet la transformation de l’Internet en une sorte de plate-forme pour tous, où l’on venait publier et partager de l’information. Malheureusement, il était impossible pour ces rédacteurs de document électronique d’agencer le contenu de leurs documents comme ils le feraient par exemple pour un journal. En effet, le langage HTML ne le permettait pas (en réalité il le permettait mais jusqu’à une certaine mesure). Alors, quelques années après la création du web, le langage déclaratif CSS ( cascading style sheet ) dont le rôle est de fournir du style aux documents web est né. L’idée derrière l’invention de la feuille de style CSS était de créer un outil se focalisant sur la forme de l’information, sur le rendu visuel. L’invention du CSS a alors permis aux éditeurs d’avoir la main aussi bien sur le fond que sur la forme de leurs documents. Mais plus intéressant ; grâce à cette fiche de style, les acteurs du monde digital ont pu concevoir des pages web plus élaborées au niveau de la mise en forme et de l’aspect visuel. C’est le début du webdesign.</p>
+
+          <p>L’amélioration des matériels informatique a favorisé l’apparition de nombreux multimédia telle la vidéo mais surtout la popularisation de technologie telle le PHP, le Javascript et le Flash. Cette dernière a longtemps marqué internet et le développement web alors qu’au départ elle a été conçue pour fonctionner avec les “Pen computers” ; des interfaces d’ordinateur utilisant un stylet, les ancêtres de la tablette numérique. Le point fort du Flash a été sa capacité à pouvoir gérer des animations. Les développeurs et webdesigners l’ont donc détourné pour l’utiliser sur les sites internets lorsqu’ils ont vu son grand potentiel. En effet, la combinaison de Flash avec notamment des boutons présents sur une page web permettait de rendre le site internet entièrement interactif. Ceci a marqué un grand tournant dans le monde d’internet. Ajouter de l’animation sur un site internet a été le moyen d’exprimer son côté créatif. L’engouement autour de Flash a été tel que de nombreux agence web ont émergés. Elles y ont trouvé leur compte en termes de commerce digital. Dorénavant, la création de site internet était devenu un métier à part entière. L’ère des simples “documents webs” a pris fin, les sites internets beaucoup plus graphiques et interactifs on prit la relève. Le nombre de développeur n’a alors cessé d’augmenter. Certains ont même pris le surnom de “Flashers” : des spécialistes dans l’exploitation de Flash afin de développer des sites internets assez innovant pour générer du trafics et créer un business rentable. </p>
+
+          <p>Presque en même temps que Flash, le Javascript a également pris de l’ampleur. Il s’agit d’un langage différent du HTML (balisage) et du CSS (déclaratif). Il fait partie de la famille des langages de programmation. Il permet donc aux codeurs d’exprimer un certain nombre d’instructions devant être comprises et exécutées par un ordinateur. Autrement dit, d’écrire des algorithmes, des programmes, c’est à dire des suites d’instructions réfléchies et ayant une logique. Des instructions pouvant prendre la forme de conditions, de répétitions d’actions etc…</p>
+
+          <p>À ce moment-là, le terme de développement web a pris un sens plus proche de celui qu’on lui attribue aujourd’hui puisque les développeurs web “développait “ au sens propre leur sites ; il y avait une réflexion conceptuelle derrière leur création, ils pouvaient utiliser un langage de programmation. C’est d’autant plus vrai lorsque la version 3 de PHP, un autre langage de programmation web pouvant rendre le site dynamique a vu le jour. </p>
+
+          <p>Les possibilités qu'offrent Javascript a permis aux développeurs de laisser libre court à leur inventivité et laisser sortir le designer en eux. En effet, le Javascript est une technologie ayant la capacité de rendre des éléments HTML plus interactif en s’aidant du CSS. Il diffère cependant du Flash car il a été conçu spécifiquement pour le web.</p>
+
+          <p>
+            L’évolution de développement web a permis de faire naître des technologies suffisamment puissantes qui, entre les mains d’initiés permettaient de créer des sites internets plus esthétiques, plus dynamiques, plus ergonomiques. L’émergence de toutes ces nouvelles technologies web ; le CSS, le Javascript et le PHP a donc valorisé le secteur du développement web. Les langages HTML et CSS ont continué leur évolution et ont permis de plus grand chose. A l’inverse, la technologie Flash a décliné jusqu’à disparaître. Ce qui a eu pour conséquence la diminution de l’utilisation des animations. L’animation de page n’a donc plus été le moyen phare pour attirer des clients sur un site ; avec la version 3 du CSS et la version 5 du HTML 5, les développeurs ont pu créer des designs aussi poussé que dans les domaine du print (affiche, brochure...) voir très souvent supérieur. La sensibilité sur le design d’interface, sur l’UI (User Interface) s’est grandement développée pour devenir la tendance.
+          </p>
+
+          <p>
+            La création de magnifique site web fonctionnelle n’était pas à la portée de tous, surtout à l’époque du web 2.0. Lorsque les technologies composant Internet ont atteint une grande maturité et une certaine stabilité, le développement web à l’instar du monde du numérique et de l'informatique en général, renvoyait l’image d’un secteur dont les portes n’étaient ouvertes qu’aux ingénieurs et aux personnes ayant une forte passion pour les mathématiques et la technologie ; un secteur destiné à des initiés, un secteur nécessitant un certain niveau d’expertise et le diplôme correspondant. Parfois il était nécessaire d’avoir au préalable un diplôme en mathématique pour pouvoir devenir développeur ou plus globalement webmaster. 
+
+          </p>
+
+          <p>
+            Coder n’est pas chose aisée. Le rôle de développeur web impliquait une grande compréhension des technologies relatives à internet et des outils informatiques puisque le développement web se faisait essentiellement à la main et en partant de zéro. Autrement dit, la majeure partie du temps, pour mener à bien leur projet, les développeurs n'avaient recours qu’aux technologies et langages de programmation natifs qu’ils maîtrisaient sans passer par un quelconque produit tiers préalablement conçu. Cette façon de faire permettait aux développeurs d’avoir la main sur chaque aspect du produit qu’ils construisaient. Ils étaient les architectes des sites internets et étaient responsable de l’ensemble de leurs codes. Le choix de rajouter autant de fonctionnalité qu’ils le souhaitaient, sans casser leur production leur appartenait. Il leur incombait seulement de réfléchir à la bonne manière de concevoir leur code afin de répondre à leurs besoins, de s’assurer que leur code était fonctionnel et présentant le moins de bogue possible. Dans un tel contexte, la rigueur et l’expertise est de mise, des qualités que l’on ne retrouve pas chez tout le monde mais qui sont primordiales pour un développeur web.
+          </p>
+
+          <p>
+            Au fil du temps, le nombre de projet mené par un développeur web s'accroît et se diversifie. Mais il n’est pas rare que plusieurs sites web qu’il est amené à développer se ressemblent dans le sens où ils présentent la même problématique. Dans un tel cas, un code écrit pour répondre aux besoins d’un site peut être réutilisé pour les autres sites similaires. Pour avoir des codes réutilisables, les développeurs de site internet ont pris l’habitude de créer des librairies qu’ils se partageaient entre eux. Une librairie est un ensemble de fonctions (de bouts de codes informatique) répondant à un besoin précis. Elle est centralisée à un endroit et peut être appelée n’importe où dans le code source du site lorsque nécessaire. Chaque problème rencontré en développement web peut donner lieu à la création d’une nouvelle librairie qui fera office d’outil résolvant ce problème. Ainsi, avec le temps le nombre de librairie a grandement augmenté, elles sont devenues omniprésentes. Certaines librairies permettent d’animer facilement les textes d’une page web, d’autres sont spécialisé dans la simplification des opérations sur ce qu’on appelle le DOM,  quelques-unes permettent de faciliter la détection du navigateur de l’utilisateur et bien d’autres encore. Il existe de multiple solution à chaque problème de développement web mais à quoi bon se fatiguer à en chercher une alors qu’un autre développeur est prêt à partager sa solution qui fonctionne ?  C’est pour répondre à ceci que les librairies se sont multipliées. L’idée derrière les librairies est donc d’éviter de chercher une solution à un problème déjà traité et résolue, de ne pas réinventer la roue, mais plutôt de réutiliser ce que les autres développeurs ont pris soin de mettre en place pour simplifier la vie de la communauté. Comme l’a si bien dit un enseignant, le bon développeur est fainéant, économe et adore simplifier les choses :  il factorise et centralise tout ce qui peut être réutiliser pour de futurs projets.
+          </p>
+
+          <p>
+            Une librairie peut être la base d’une autre librairie. Une chaîne de dépendance entre librairie peut se faire ; une librairie peut intégrer une autre pour donner naissance à une toute nouvelle librairie ayant un rôle différent qui peut à son tour être intégrée dans une autre librairie et ainsi de suite. Ici, encore une fois il n’est pas question de réinventer la roue mais partir sur des bases existantes pour les étendre et les améliorer... Une librairie est donc un outil très efficace pour gagner du temps.
+          </p>
+
+          <p>
+            L’utilisation de librairie est devenue naturel chez les développeurs. De même chez les développeurs novices en cours d’apprentissage et qui ne font que calquer les pratiques des plus expérimentés. Ces néophytes dans le monde du développement web débarquent sur le terrain avec déjà toute une panoplie de librairies capables de répondre à quasiment la totalité des problématiques auxquelles ils peuvent être confronté au cours de leur aventure. De ce fait, leur premier réflexe face à un problème est de trouver la librairie qui va pouvoir leur apporter la solution. Il n’est plus question de recherche de solutions à proprement parlé mais plutôt de recherche de l’outil, de la librairie qui a la solution. La courbe d’apprentissage de la création d’un site internet paraît alors rapide car la difficulté du code est occultée derrière une surcouche qu’est la librairie. La librairie se veut être un outil simple à utiliser permettant d’accomplir une tâche plus complexe. 
+          </p>
+
+          <p>
+            La nouvelle génération de développeur web actuelle n’a pas forcément besoin d’être très rigoureux, ni de comprendre en profondeur les rouages des codes et des technologies qu’elle utilise pour arriver à produire un site fonctionnel. Des connaissances moyennes en HTML, CSS et Javascript sont suffisant. Pour la nouvelle génération, la conception d’un site internet de A à Z inclus bien souvent l’utilisation de librairies. Avec une telle approche, la création de site internet devient tout de suite chose facile.
+          </p>
+
+          <p>
+            S’il y a bien une librairie à mettre en avant ce serait JQuery. C’est une librairie javascript qui fournit tout un ensemble de morceau de code prête à l’emploi. Il a pour objectif de simplifier la manipulation du DOM (une représentation du HTML manipulable par le Javascript). La manipulation du DOM est bien trop souvent fastidieuse et demande trop d’instruction et de ligne de code pour une simple tâche. JQuery permet de remédier à ce problème, ce qui lui vaut une place importante dans le coeurs des développeurs web. Pour illustrer l’intérêt de JQuery voyons l’exemple qui suit. Les deux codes suivants font exactement la même chose ; sélectionner un titre dans une page web. Le premier est en Javascript natif, le second en Jquery : 
+          </p>
+
+          <ul class="ul">
+            <li>document.querySelector(".titre")[0],</li>
+            <li>$(“.titre”).</li>
+          </ul>
+
+          <p>Il va de soit que le dernier code avec une syntaxe Jquery est beaucoup plus simple à lire, à écrire et à comprendre. JQuery présente aussi l’avantage de rendre plus abordable des concepts pas spécialement simples à saisir. J’ai personnellement pris l’habitude d'utiliser cette librairie notamment pour exploiter le concept de “délégation d'événement”, que ce soit durant mon stage ou pour un projet personnel. C’est du gain d’énergie et de temps. Beaucoup de développeur, même sénior, installent la librairie JQuery uniquement pour éviter de mettre en place eux même la technique d’AJAX. Beaucoup de novice ignore tout de l’envers du décor de cette technique, ce qui ne les empêche pas de l’utiliser grâce à la version simplifiée proposé par Jquery.</p>
+
+          <p>
+            Coder un site web a longtemps nécessité beaucoup de réflexion et de créativité technique. Aujourd’hui ce n’est plus nécessairement le cas : les développeurs n’ont plus à se demander comment écrire tel ou tel code afin de réaliser telle ou telle tâche ; des solutions existent déjà, il suffit de trouver la bonne librairie à implémenter au sein de son projet. Ceci dit, rien n’empêche un développeur d’explorer d’autres pistes, d’autre façon de résoudre un problème, de faire mieux qu’une librairie approuvée, mais bien souvent la dimension économique entre en jeu : il faut créer vite pour être plus productif, il n’y a donc pas forcément de place ni de temps pour inventer autres choses que ce qui est déjà là et qui fonctionne.
+          </p>
+
+          <p>
+           En perpétuelle quête de productivité et de simplification des processus de création de site internet, les développeurs n’ont pas hésité à concevoir des frameworks. C’est une autre étape de l’industrialisation du développement web. En effet, le framework qui est une structure complexe et complète, possède déjà tout le flux de contrôle nécessaire pour répondre à un besoin. Un grand nombre d’utilitaires y sont déjà intégrés. Le développeur précise simplement la façon dont une fonctionnalité doit se comporter en injectant un peu de son propre code à l’intérieur du framework. Le rôle d’un framework est donc de décharger le développeur des phases de bas niveau ne répondant pas directement aux réelles besoin d’un projet mais qui sont tout de même nécessaire pour justement mettre en place un système qui va y répondre. Grâce à un framework, un développeur peut par exemple éviter d’avoir à développer un simple formulaire d’authentification et plutôt se focaliser sur d’autres fonctionnalités ayant plus de “valeur”.
+          </p>
+
+          <p>
+            Outre le fait de ne pas avoir à réinventer la roue, et la réduction du temps de développement, un framework présente également l’avantage de s'occuper de l’aspect de maintenance et de mise à jour qui sont primordiales en développement web. Généralement, développer sa propre solution en partant de zéro signifie garder constamment un oeil sur le cycle de vie de son code ; le tester, l’améliorer lorsque c’est nécessaire, repérer et réparer les bugs et les failles de sécurités… Dès lors qu’un code est assez complexe et nécessitant beaucoup de logique (généralement des fonctionnalités en PHP ou en Javascript), sa surveillance devient vitale sans quoi le site internet en question risque de devenir obsolète et non utilisable. Or un framework est un outil pérenne, il est conçu pour apporter une réponse une bonne fois pour toute et doit rester fonctionnel au fil du temps. Ses créateurs sont censés garantir sa mise à jour et sa maintenance mais il n’est pas rare que d’autres développeurs collaborent avec eux afin d’apporter des améliorations ou des corrections. Ainsi, à long terme, les frameworks s’assurent de la longévité des sites internets. 
+          </p>
+
+          <p>
+            J’ai été amené à employer le très célèbre framework Bootstrap lors d’un projet d’intégration d’une maquette d’une page internet. Au-delà de faire gagner du temps, les frameworks, en l'occurrence Bootstrap, permettent d’améliorer le travail collaboratif des développeurs. Au lieu d’intégrer la maquette qui m’a été donné à ma façon, avec ma propre approche et ma réflexion, j’ai simplement mis en place la bonne structure de code du framework Bootstrap le plus à même de résoudre mon problème. De cette façon, mes coéquipiers connaissant le framework n’ont pas à décoder et essayer de comprendre ce que j’ai fait. Effectivement, chaque développeur d’un même projet est amené à apporter sa part de contribution en terme de code ce qui peut donner lieu à une cacophonie de code avec le temps ,puisque chacun a sa façon particulière de réfléchir et de programmer. Mais un framework pallie se soucis en imposant une directive à suivre ; le code au sein d’un projet devient harmonieux, tout le monde procède de la même manière, tous parlent le même vocabulaire ; celui du framework. 
+          </p>
+
+          <p>Malheureusement, de cette façon l’outil devient restrictif pour le développeur, ce dernier a peu de marge de manoeuvre au niveau de sa créativité technique puisque le framework va lui dicter une structure de code.</p>
+
+          <p id="part2" class="main-content__subtitle-num">2.2.</p>
+          <h2 class="main-content__subtitle">Des templates et builders pour une création de site internet facile et rapide.</h2>
+
+          <p>Force est de constater que plus un domaine progresse et avance, et plus les ressources sont mises à disposition pour réduire la charge de travail des travailleurs et surtout augmenter leurs vitesses de production. Le domaine du développement web ne fait pas exception à la régle. Depuis les premiers sites internet, de nombreuses librairies ont vu le jour, ensuite les développeurs ont créé les frameworks. Dans cette même logique, les développeurs ont mis en place des templates (thèmes) de site internet. Ces templates sont des gabarits, des sites internet prêt à être utilisés, de la même façon qu’il suffit d’ouvrir une boîte de conserve pour espérer remplir une assiette.</p>
+
+          <p>Actuellement, le web est peuplé de templates de site qui sont répertoriés sur des services en ligne. On peut citer l’un des plus grands, ThemeForest, qui est une boutique où tout un chacun peut acheter des thèmes ou vendre ceux qu’il a développés à des prix variant selon la qualité et la complexité. Sur un service comme celui-ci, il est possible de faire son choix parmis des milliers de templates classés par catégories. Certains permettent de mettre en place un portfolio en ligne, d’autres sont dédiés aux sites de type Hôtels. On peut également trouver des templates multi-usage capables de fournir des bases pour créer n’importe quel type de site. Sur le marché, certains templates sont payants mais ce n’est pas nécessairement le cas. Avec un template, il n’est donc pas impossible de “créer” un site internet gratuitement.</p>
+
+          <p>Ces sites internets “en conserve” (canned website) sont très efficaces pour déployer rapidement un site internet. Leur utilisation est d’une simplicité déconcertante pour un personne ayant un minimum de connaissance dans la réalisation de site web. Toute les fonctionnalités y sont déjà incluses, des fonctionnalités conçues dans un but précis. Le scénario standard pour un développeur se basant sur l’utilisation de template peut être le suivant :</p>
+
+          <ul class="ul">
+            <li>choisir avec son client le template propice au projet ou bien en trouver un gratuit;</li>
+            <li>placer l’ensemble du dossier correspondant au site internet dans un espace d’hébergement;</li>
+            <li>remplacer les faux textes par du vrai contenu;</li>
+            <li>changer les couleurs du template pour les adapter à la charte graphique ;</li>
+            <li>ajouter des images;</li>
+            <li>ajouter un logo;</li>
+            <li>mettre en ligne.</li>
+          </ul>
+
+          <p>Le gain de temps n’est donc clairement pas négligeable. Pour réaliser un site, il suffirait d’installer un template ayant le design qui nous plait et répondant à notre besoin, réajuster certaines choses si nécessaire et c’est suffisant. Il n’y a nul besoin de passer par une phase poussée d’avant-projet durant laquelle il faille réfléchir à la façon dont la solution doit être transcrite en code, ni à la façon de rendre visuellement attirant le site.</p>
+
+          <p>Néanmoins, il arrive assez souvent que le site soit fonctionnel à l’image de résultat escompté mais manque un petit quelque chose de très spécifique et qui n’est pas prise en charge par le template. Lorsque ceci arrive le développeur risque alors d’être confronté à un problème. En effet, un utilisateur de template peut décider de s’éloigner du gabarit initial pour être original, pour embellir son site et ajouter des fonctionnalités supplémentaires pas encore incluses. Mais un template est créé dans le but de réaliser une tâche bien spécifique, il est très spécialisé et pas très flexible. Il restreint beaucoup le développeur.Ainsi, ajouter des fonctionnalités à un template n’est pas toujours possible. De plus, modifier un code qui n’est pas le sien afin d’ajouter une fonctionnalité supplémentaire est très risqué dans la mesure où le code fait maison censée apporter une innovation peut rendre le site instable voir même le casser.</p>
+
+          <p>Pour contourner ce problème un développeur peut passer par un CMS (système de gestion de contenu) plutôt que directement employer un template . Un CMS est une application web, une plate-forme permettant de gérer des contenus numériques, et donc par extension des sites internet. Il offre un back-office : une interface de saisie de contenus et de contrôle sur les différents aspects du site comme le rendu visuel.</p>
+
+          <p>Contrairement à un template standard, un CMS facilite considérablement la gestion de contenu et l’administration de site, il permet de gérer un site dynamique. Dans un premier temps le développeur choisit un template compatible avec le CMS afin d’instaurer le design global et le rendu visuel du site. Ensuite il ajoute du contenu au site via l’éditeur de texte qu’offre le back office. Puis il ajoute toutes les fonctionnalités dont il a besoin. L’intérêt du CMS est de séparer l’aspect visuel des fonctionnalités. Le template du CMS s’occupe du design et les plugins permettent d’enrichir le site en lui apportant des fonctionnalités supplémentaires. Lors de l’utilisation d’un CMS, il y a une logique d’assemblage ; afin d’alimenter le site en fonctionnalités des modules (plugins) sont installés. Ces modules sont spécialement conçus pour fonctionner avec le CMS, et peuvent la plupart du temps communiquer entre eux. Il est donc possible d’ajouter à son site des fonctionnalités nouvelles sans trop de soucis. De plus, ces modules d’extensions sont maintenus à jour par leurs créateurs, les développeurs qui les utilisent sont alors déchargés de cette tâche. </p>
+
+          <p>Souvent, les CMS intègrent également des builders, c’est-à-dire des constructeurs de pages permettant de créer un design sans avoir à écrire une seule ligne de code. Les builders se présentent sous forme d’éditeur “wysiwyg” (what you see is what you get), et affichent ainsi en temps réelle les modifications en termes de design sur une page. Concevoir une page est devenue une question de glisser-déposer car un builder donne la possibilité de placer des blocs, du texte, des images etc n’importe où sur la page. </p>
+
+          <p>La combinaison : CMS + Builder tend à rendre le métier de développeur web banale et moins remarquable qu’il l’a été auparavant car ces outils apportent une rapide solutions aux développeurs, une solution sur l’étagère. Ce qui ne déplaît pas les développeurs les moins expérimentés puisqu’entrer dans le domaine du développement web devient alors plus simple.</p>
+
+          <p>La puissance de ces outils ne profite pas seulement ceux qui sont dans le domaine. N’importe quelle personne lambda, non développeur ni ayant un profil technique, peut réussir à créer un site internet avec un peu de courage et de volonté. Ce constat est particulièrement visible lorsqu’on aborde les blogs. En effet, un blog n’est rien d’autre qu’un site internet propulsé par un CMS et un blogueur qui crée son propre site n’est pas nécessairement un développeur web. Ce constat est également visible lorsque l’on se penche sur la plate-forme Wix. C’est une plate-forme qui a pour mission de simplifier le développement web à l’aide de builders et de templates. Un site internet Wix est très facile à mettre en place, plus simple qu’un CMS car son interface a été pensé justement dans le but de permettre la construction de pages web. La création de site Wix est si simple qu’il est possible d’avoir un site en moins d’une heure. Aux yeux de certains, Wix offre donc un réel raccourci dans la création de site. Néanmoins, elle n’a réussi à cibler que les utilisateurs finaux. La majorité des développeurs et designers reprochent à Wix de remettre en cause leur métier pour bien des raisons.</p>
+
+
+        </div>
+        
+      </div>
+    </div>
+
+  </div>
+ 
+
+
+</main>
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+<script type="text/javascript" src="lib/gsap/CustomEase.min.js"></script>
+<script type="text/javascript" src="lib/gsap/TweenMax.min.js"></script>
+<script type="text/javascript" src="lib/gsap/TweenLite.min.js"></script>
+<script type="text/javascript" src="lib/gsap/TimelineLite.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.0/paper-core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+
+<script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>  
+<script type="text/javascript" src="src/script/main.js"></script>
+
+</body>
+</html>

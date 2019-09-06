@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fred Rand - LpWd</title>
+  <!-- <link rel="shortcut icon" href="source/image/favicon.ico"> -->
+
+  <link href="https://fonts.googleapis.com/css?family=Lalezar|Merriweather:300,900|Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="src/style/main.css" />
+
+</head>
+
+
+<body>
+
+<div class="cursor cursor--small"></div>
+<canvas class="cursor cursor--canvas" resize></canvas>
+
+<header class="main-header">
+
+  <div class="main-header__button_container link is-closed">
+    <div class="main-header__lines">
+      <span></span>
+      <span></span>
+    </div>
+
+    <button class="main-header__button heading">
+      <span>Menu</span>
+    </button>
+  </div>
+
+  <div class="main-header__menu">
+    <div class="main-header__bg main-header__bg--1"></div>
+    <div class="main-header__bg main-header__bg--2"></div>
+
+    <div class="main-header__content">
+     <ul class="main-header__menu-list">
+
+        <li class="main-header__menu-item main-header__menu-item is-current">
+          <a href="./index.html" class="link heading trns">
+            Accueil
+          </a>
+        </li>
+
+        <li class="main-header__menu-item  ">
+          <span class="num main-header__num trns">00.</span>
+          <a href="./introduction.html" class="link heading trns">
+            Introduction
+          </a>
+        </li>
+
+        <li class="main-header__menu-item">
+          <span class="num main-header__num trns">01.</span>
+          <a href="./partie-1.html" class="link heading trns">
+            Une agence de design globale
+          </a>
+
+          <ul>
+            <li class="heading"><span class="num">1.1.</span> Sa place, sa force et sa démarche</li>
+            <li class="heading"><span class="num">1.2.</span> Sa vision de la performance</li>
+            <li class="heading"><span class="num">1.3.</span> Son équipe polyvalente</li>
+          </ul>
+        </li>
+
+        <li class="main-header__menu-item">
+          <span class="num main-header__num trns">02.</span>
+          <a href="./partie-2.html" class="link heading trns">
+            Le développement de site internet se simplifie et se banalise : la créativité de ses acteurs mis à mal.
+          </a>
+
+          <ul>
+            <li class="heading"><span class="num">2.1.</span> Des frameworks et libraries pour résoudre tous les problèmes des développeurs ?</li>
+            <li class="heading"><span class="num">2.2.</span> Des templates et builders pour une création de site internet facile et rapide.</li>
+          </ul>
+
+        </li>
+
+        <li class="main-header__menu-item">
+          <span class="num main-header__num trns">03.</span>
+          <a href="./partie-3.html" class="link heading trns">
+            Une valorisation de la créativité dans une branche où le prête à être utilisé est devenu commun.
+          </a>
+
+           <ul>
+            <li class="heading"><span class="num">3.1.</span> L’originalité du design (UX / UI) : un indicateur de la qualité d’un site web.</li>
+            <li class="heading"><span class="num">3.2.</span> Penser animation et interaction : le rôle du Creative Développer.</li>
+          </ul>
+        </li>
+
+        <li class="main-header__menu-item main-header__menu-item">
+          <span class="num main-header__num trns">04.</span>
+          <a href="./partie-4.html" class="link heading trns">
+            Une industrialisation en faveur de l’avènement des web apps et applications mobiles.
+          </a>
+        </li>
+
+         <li class="main-header__menu-item main-header__menu-item">
+          <span class="num main-header__num trns">05.</span>
+          <a href="./conclusion.html" class="link heading trns">
+            Conclusion
+          </a>
+        </li>
+
+
+
+
+      </ul>
+
+
+    </div>
+
+  </div>
+ 
+</header>
+
+
+<main class="main-content">
+
+  <div id="swup" class="main-content__inner">
+
+      <div class="main-content__page-nav transition-up">
+         
+        <div class="main-content__page-nav-inner">
+
+          <div class="main-content__page-nav-content">
+
+            <div class="main-content__page-pagin-contn">
+              <p class="num">01</p>
+              <div></div>
+              <p class="num">05</p>
+            </div>
+
+            <div class="main-content__page-controlers">
+
+              <a class="link main-content__page-link" href="./introduction.html">
+                <img src="./src/img/icon-prev.svg">
+              </a>
+
+              <a class="link main-content__page-link" href="./partie-2.html">
+                <img src="./src/img/icon-next.svg">
+
+                <div class="main-content__circle-container">
+                  <div id="main-content__circle-active-border" class="main-content__circle-active-border">
+                    <canvas class="counter" width="48" height="48" id="main-content__circle-canvas"></canvas>
+                  </div>
+                </div>
+
+              </a>
+            </div>
+
+            
+            <div class="main-content__page-anchors three-step">
+              <div class="main-content__page-step"><a href="#part1"></a></div>
+               <div class="main-content__page-step"><a href="#part2"></a></div>
+               <div class="main-content__page-step"><a href="#part3"></a></div>
+              <div class="main-content__page-step-line"></div>
+            </div>
+          </div>
+         
+
+         
+        
+        </div>
+
+      </div>
+
+    <div class="main-content__page transition-up">
+      <div class="main-content__page-inner">
+        <div class="main-content__page-content text">
+
+          <div class="main-content__title-num-container">
+            <span class="main-content__title-num heading transition-textright delay1">0</span>
+            <span class="main-content__title-num heading transition-textright delay2b">1</span>
+            <span class="main-content__title-num heading transition-textup delay3">.</span>
+          </div>
+
+          <div class="main-content__title-container">
+             <h1 class="main-content__title heading transition-textup delay4">Une agence de design globale</h1>
+          </div>
+
+          <p id="part1" class="main-content__subtitle-num">1.1.</p>
+          <h2 class="main-content__subtitle">Sa place, sa force et sa démarche.</h2>
+
+          <p>La vocation première d’Icilaba Création, une agence fondée en 2011 par trois coassociés, réside dans l’accompagnement des petites et moyennes entreprises afin de construire leur visibilité digitale et favoriser leur développement. Ainsi, son objectif est de permettre à ces entreprises d’avoir une identité de marque cohérente, mémorable et surtout rentable.</p>
+
+          <p>La démarche adoptée par l’entreprise tend à placer l’humain et la communication transparente au centre de tout son processus créatif : c’est une stratégie de co-création. En effet, les recherches de solutions ainsi que les projets, sont menées main dans la main avec le client et les éventuels associés tout en prenant en compte les besoins des utilisateurs finaux. Ce qui permet d’instaurer une confiance entre chacun des partis. </p>
+
+          <p>Cette démarche s’inspire de plusieurs méthodologies telles le lean startup, le design thinking, le user experience (UX) et la méthode Agile. Ainsi, elle vise à : </p>
+
+          <ul class="ul">
+            <li>Mettre en avant l’esprit collaboratif et créatif ;</li>
+            <li>Améliorer la qualité de la relation client ;</li>
+            <li>Réfléchir et concevoir pour les besoins des utilisateurs ;</li>
+            <li>Augmenter la productivité et réduire les pertes grâce à des procédés par itération.</li>
+          </ul>
+
+          <p>Dans le cadre d’un projet, au-delà de la volonté d’être irréprochable en termes de qualité de communication avec ces partenaires et ces clients ; Icilaba Création en tant qu’agence de design global, n’en néglige pas moins la dimension qualitative de ses produits et possède sa propre vision de ce qu’est la performance.</p>
+
+
+          <p id="part2" class="main-content__subtitle-num">1.2.</p>
+          <h2 class="main-content__subtitle">Sa vision de la performance.</h2>
+          <p>Afin de mesurer sa performance créative, l’agence a établi un système de mesure qu’elle utilise à chacun de ses projets. Il repose sur trois indicateurs :</p>
+
+           <ul class="ul">
+            <li>L’agréabilité ;</li>
+            <li>L’utilisabilité ;</li>
+            <li>La fiabilité ;</li>
+          </ul>
+
+          <p>Ce modèle est aussi bien adapté au design digital qu’au design industriel et permet d’avoir une bonne appréhension de la performance. </p>
+
+          <p>Le premier niveau de mesure est l’agréabilité. Il permet de mesurer la capacité d’attraction viscérale de quelque chose. Il fait appel aux sens. On va parler d’ergonomie, d’aspect visuel et de beauté lorsqu’on fait appel à la vue, tandis qu’avec le toucher, on va plutôt faire allusion à la douceur, la chaleur etc. </p>
+
+          <p>Ensuite vient l’indicateur d’utilisabilité qui s’attache à mesurer l’efficience, la facilité d’utilisation d’un objet, d’un service etc.</p>
+
+          <p>Le dernier niveau de mesure, la fiabilité permet de questionner l’aptitude d’une chose à accomplir ses fonctions prévues. </p>
+
+          <p id="part3" class="main-content__subtitle-num">1.3.</p>
+          <h2 class="main-content__subtitle">Son équipe polyvalente</h2>
+
+          <p>Pour que les processus de création se fassent dans une plus grande fluidité, Icilaba Creation recherche avant tout chez ses membres, une grande curiosité et une polyvalence en termes de compétence. Car chaque membre est un maillon d’une chaîne au sein de l’agence et doit être à même, jusqu’à une certaine mesure, de communiquer avec les autres et comprendre le fonctionnement et les enjeux de chacun des rôles. Chaque membre de l’équipe a son propre point fort : le développement web, le graphisme, le design UX, le design produit, la communication… mais peut changer de casquette à tout moment et basculer d’un rôle à un autre lorsque c’est nécessaire et si le profil le permet. Ce qui est très pratique dans une structure regroupant une petite équipe comme c’est le cas ici. L'intérêt est de permettre à chacun de pouvoir passer d’un projet A à un projet B (qui n’est pas forcément de même nature), de varier le type de projet afin de combattre la monotonie et l’ennuie et ainsi garder un esprit créatif.</p>
+
+          <p>Cette pluridisciplinarité permet à l’entreprise de toucher des domaines variés tels :</p>
+
+          <ul class="ul">
+            <li>le design digital : l’écosystème regroupant ce qui a trait à internet, le développement web, la création d’interface utilisateur , le design logiciel.</li>
+            <li>le design graphique: un aspect axé sur les identité visuelles ( logo, charte graphique…).</li>
+            <li>le design d’objet : un domaine plus industriel se focalisant sur la conception et le design d'objet  physique comme une chaise ou une table barbecue.</li>
+          </ul>
+
+        </div>
+        
+      </div>
+    </div>
+
+  </div>
+ 
+
+
+</main>
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+<script type="text/javascript" src="lib/gsap/CustomEase.min.js"></script>
+<script type="text/javascript" src="lib/gsap/TweenMax.min.js"></script>
+<script type="text/javascript" src="lib/gsap/TweenLite.min.js"></script>
+<script type="text/javascript" src="lib/gsap/TimelineLite.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.0/paper-core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+
+<script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>  
+<script type="text/javascript" src="src/script/main.js"></script>
+
+</body>
+</html>

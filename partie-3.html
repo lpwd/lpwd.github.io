@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fred Rand - LpWd</title>
+  <!-- <link rel="shortcut icon" href="source/image/favicon.ico"> -->
+
+  <link href="https://fonts.googleapis.com/css?family=Lalezar|Merriweather:300,900|Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="src/style/main.css" />
+
+</head>
+
+
+<body>
+
+<div class="cursor cursor--small"></div>
+<canvas class="cursor cursor--canvas" resize></canvas>
+
+<header class="main-header">
+
+  <div class="main-header__button_container link is-closed">
+    <div class="main-header__lines">
+      <span></span>
+      <span></span>
+    </div>
+
+    <button class="main-header__button heading">
+      <span>Menu</span>
+    </button>
+  </div>
+
+  <div class="main-header__menu">
+    <div class="main-header__bg main-header__bg--1"></div>
+    <div class="main-header__bg main-header__bg--2"></div>
+
+    <div class="main-header__content">
+      <ul class="main-header__menu-list">
+
+        <li class="main-header__menu-item main-header__menu-item is-current">
+          <a href="./index.html" class="link heading trns">
+            Accueil
+          </a>
+        </li>
+
+        <li class="main-header__menu-item  ">
+          <span class="num main-header__num trns">00.</span>
+          <a href="./introduction.html" class="link heading trns">
+            Introduction
+          </a>
+        </li>
+
+        <li class="main-header__menu-item">
+          <span class="num main-header__num trns">01.</span>
+          <a href="./partie-1.html" class="link heading trns">
+            Une agence de design globale
+          </a>
+
+          <ul>
+            <li class="heading"><span class="num">1.1.</span> Sa place, sa force et sa démarche</li>
+            <li class="heading"><span class="num">1.2.</span> Sa vision de la performance</li>
+            <li class="heading"><span class="num">1.3.</span> Son équipe polyvalente</li>
+          </ul>
+        </li>
+
+        <li class="main-header__menu-item">
+          <span class="num main-header__num trns">02.</span>
+          <a href="./partie-2.html" class="link heading trns">
+            Le développement de site internet se simplifie et se banalise : la créativité de ses acteurs mis à mal.
+          </a>
+
+          <ul>
+            <li class="heading"><span class="num">2.1.</span> Des frameworks et libraries pour résoudre tous les problèmes des développeurs ?</li>
+            <li class="heading"><span class="num">2.2.</span> Des templates et builders pour une création de site internet facile et rapide.</li>
+          </ul>
+
+        </li>
+
+        <li class="main-header__menu-item">
+          <span class="num main-header__num trns">03.</span>
+          <a href="./partie-3.html" class="link heading trns">
+            Une valorisation de la créativité dans une branche où le prête à être utilisé est devenu commun.
+          </a>
+
+           <ul>
+            <li class="heading"><span class="num">3.1.</span> L’originalité du design (UX / UI) : un indicateur de la qualité d’un site web.</li>
+            <li class="heading"><span class="num">3.2.</span> Penser animation et interaction : le rôle du Creative Développer.</li>
+          </ul>
+        </li>
+
+        <li class="main-header__menu-item main-header__menu-item">
+          <span class="num main-header__num trns">04.</span>
+          <a href="./partie-4.html" class="link heading trns">
+            Une industrialisation en faveur de l’avènement des web apps et applications mobiles.
+          </a>
+        </li>
+
+         <li class="main-header__menu-item main-header__menu-item">
+          <span class="num main-header__num trns">05.</span>
+          <a href="./conclusion.html" class="link heading trns">
+            Conclusion
+          </a>
+        </li>
+
+
+
+
+      </ul>
+
+
+    </div>
+
+  </div>
+ 
+</header>
+
+
+<main class="main-content">
+
+  <div id="swup" class="main-content__inner">
+
+      <div class="main-content__page-nav transition-up">
+         
+        <div class="main-content__page-nav-inner">
+
+          <div class="main-content__page-nav-content">
+
+            <div class="main-content__page-pagin-contn">
+              <p class="num">03</p>
+              <div></div>
+              <p class="num">05</p>
+            </div>
+
+            <div class="main-content__page-controlers">
+
+              <a class="link main-content__page-link" href="./partie-2.html">
+                <img src="./src/img/icon-prev.svg">
+              </a>
+
+              <a class="link main-content__page-link" href="./partie-4.html">
+                <img src="./src/img/icon-next.svg">
+
+                <div class="main-content__circle-container">
+                  <div id="main-content__circle-active-border" class="main-content__circle-active-border">
+                    <canvas class="counter" width="48" height="48" id="main-content__circle-canvas"></canvas>
+                  </div>
+                </div>
+
+              </a>
+            </div>
+
+            
+            <div class="main-content__page-anchors">
+              <div class="main-content__page-step"><a href="#part1"></a></div>
+               <div class="main-content__page-step"><a href="#part2"></a></div>
+              <div class="main-content__page-step-line"></div>
+            </div>
+          </div>
+         
+
+         
+        
+        </div>
+
+      </div>
+
+    <div class="main-content__page transition-up">
+      <div class="main-content__page-inner">
+        <div class="main-content__page-content text">
+
+          <div class="main-content__title-num-container">
+            <span class="main-content__title-num heading transition-textright delay1">0</span>
+            <span class="main-content__title-num heading transition-textright delay2b">3</span>
+            <span class="main-content__title-num heading transition-textup delay3">.</span>
+          </div>
+
+          <div class="main-content__title-container">
+             <h1 class="main-content__title heading transition-textup delay4">Une valorisation de la créativité dans une branche où le prête à être utilisé est devenu commun.</h1>
+          </div>
+
+          <p id="part1" class="main-content__subtitle-num">3.1.</p>
+          <h2 class="main-content__subtitle">L’originalité du design (UX / UI) : un indicateur de la qualité d’un site web.</h2>
+
+          <p>Aujourd’hui, avec les templates et builders, créer un site internet est devenu aussi simple qu’ouvrir un document word et y insérer une image. La création de site ne semble donc plus être l’apanage d’un groupe restreint de la population. Un enfant est tout à fait capable de mettre en place son propre portfolio en ligne, tout seul, à l’aide du bon outil. Ceci rend l’aide des professionnels du web triviale voir inutile. Dans son émancipation vis à vis des développeurs, le commun des mortels accroît sa consommation de templates et builders. Ce qui a pour conséquence de nuire à la diversité de design des site internets. Les sites ne se distinguent plus vraiment les uns des autres. Souvent, seules les couleurs, la police de caractère et les images diffèrent, la structure et l’agencement de contenu est la même puisque dictés par les mêmes templates. Généralement, on retrouve sur la première page d’un site; un titre et un bouton par-dessus une image de fond et un menu horizontal tout en haut de page. S’il s’agit d’un site qui présente un service, un produit ou autre, bien souvent on retrouve une section de trois colonnes mettant en avant trois pictogrammes associés à un bloc de texte descriptif. Les mêmes designs sont utilisés partout, sur quasiment tous les sites. La notion d’innovation dans le design web semble avoir disparu. On assiste à un phénomène de standardisation des sites internet. Ce phénomène résulte du déclin du développement web et a pour conséquence la valorisation du webdesign.</p>
+
+          <p>L’objectif d’un site internet d’entreprise est tout d’abord d'accroître sa visibilité et de faire sa promotion. Le site doit montrer ce qu’elle est, ce qu’elle fait et quelles sont ses points forts. Le site doit donc être à l’image de la société et doit faire transparaître ses valeurs positives. Mais à l’ère des templates la concurrence est rude ; les sites internes corporate et commerciale sont nombreux. Afin de se démarquer du lot et montrer en quoi l’entreprise diffère de la concurrence, un site doit être impeccable au niveau de son esthétisme. Il doit être unique et s’éloigner autant que possible des standards. C’est surtout sur ce point que les sites webs modernes se doivent d’être le plus performant. Pour se faire, le design UX et UI doivent être pensés avec rigueur. En effet, la simplicité de réalisation d’un site internet et l’utilisation systématique d’outils comme les templates, place tout le monde sur le même pied d’égalité, il faut alors tout miser sur l’expérience utilisateur et le design visuel d’un site. C’est ici que le développeur web, plus précisément le webdesigner (au sens large) gagne en importance et retrouve sa créativité perdue. Pouvoir créer un site internet rapidement et sans prise de tête ne signifie pas savoir maîtriser les notions de design UX et UI.</p>
+
+          <p>Le design UX est la procédure qui vise à améliorer l’expérience globales des utilisateurs dans le but de les rendre le plus satisfait possible lorsqu’ils interagissent avec un site internet. Leur satisfaction dépend de plusieurs facteurs dont la facilité d’utilisation du site, la facilité d’accès à l’information... La satisfaction de l’utilisateur est essentielle à prendre en compte puisqu’il a la possibilité d’aller voir ailleurs.</p>
+
+          <p>Le design UI se concentre davantage sur l’esthétique mais aussi sur l'accessibilité, la réactivité et l’efficacité d’un site internet. Bien déterminé, il permet à l’utilisateur, de cerner précisément et en un coup d’oeil l’entreprise, ce qu’elle produit et son identité.</p>
+
+          <p>Les personnes lambdas sont généralement incapables d’intégrer ces notions d’UX et d’UI au sein de leur création et se retrouve donc avec un site internet tout droit sorti d’un moule. </p>
+
+          <p>Evidemment, mettre en place toute une identité visuelle demande du temps non négligeable. Ce temps peut être en fait gagné en utilisant justement des templates. En effet certains thèmes ont été conçu pour être le plus flexible possible et permettre une grande personnalisation, à hauteur de 75%. C’est le cas du thème Avada que j’ai eu l’occasion d'utiliser lors de mon stage. Il s’agit du thème de prédilection de l’agence du fait de sa performance globale. Le temps gagné en développement grâce à la personnalisation de thème, est alloué par l’agence dans la réflexion UX et UI. Une réflexion ayant pour but de rendre le site unique.</p>
+
+
+
+          <p id="part2" class="main-content__subtitle-num">3.2.</p>
+          <h2 class="main-content__subtitle">Penser animation et interaction : le rôle du Creative Développer.</h2>
+
+          <p>Puisque l’industrialisation tend à limiter le développeur sur la technique et le design, sur quel autre aspect peut-il donc jouer afin d’exprimer sa créativité ? Auparavant, les développeurs laissaient sortir leur côté créateur et inventeur à travers les animations. Mais l’ère des animations Flash est révolu depuis maintenant quelque année. Heureusement pour les développeurs web moderne tombés dans la monotonie de l’installation de plugins et de templates, les nouvelles technologies web actuelles sont assez performantes et assez riche pour permettre la mise en place d’animations encore plus poussées. Les possibilités qu’offres ces nouvelles technologies vont au- delà des simples animations ; il est maintenant possible d’intégrer de la 3D au sein d’un site, d’activer une réalité augmentée ou virtuelle dans une application mobile...Ce qui change la façon dont les utilisateurs interagissent avec les interfaces. D’où la popularisation de la notion de design interactif qui s’attache à examiner comment les internautes interagissent avec la technologie en générale pour ensuite créer une interface bien pensée ou le mouvement prend un rôle important.</p>
+
+          <p>Le développeur qui intègre cette notion de design interactif au sein de son processus de création devient un concepteur et créateur visuel : un développeur créatif ( creative developer). Celui-ci concentre son temps dans la réflexion et la conception des interactions facilitant la navigation ; ces interactions permettent d’amplifier l’UX.</p>
+
+          
+
+        </div>
+        
+      </div>
+    </div>
+
+  </div>
+ 
+
+
+</main>
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+<script type="text/javascript" src="lib/gsap/CustomEase.min.js"></script>
+<script type="text/javascript" src="lib/gsap/TweenMax.min.js"></script>
+<script type="text/javascript" src="lib/gsap/TweenLite.min.js"></script>
+<script type="text/javascript" src="lib/gsap/TimelineLite.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.0/paper-core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+
+<script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>  
+<script type="text/javascript" src="src/script/main.js"></script>
+
+</body>
+</html>

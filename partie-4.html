@@ -119,40 +119,68 @@
 <main class="main-content">
 
   <div id="swup" class="main-content__inner">
-     
-    <div class="main-content__splash-container transition-up">
-      <div class="main-content__splash">
+
+      <div class="main-content__page-nav transition-up">
+         
+        <div class="main-content__page-nav-inner">
+
+          <div class="main-content__page-nav-content">
+
+            <div class="main-content__page-pagin-contn">
+              <p class="num">04</p>
+              <div></div>
+              <p class="num">05</p>
+            </div>
+
+            <div class="main-content__page-controlers">
+
+              <a class="link main-content__page-link" href="./partie-3.html">
+                <img src="./src/img/icon-prev.svg">
+              </a>
+
+              <a class="link main-content__page-link" href="./conclusion.html">
+                <img src="./src/img/icon-next.svg">
+
+                <div class="main-content__circle-container">
+                  <div id="main-content__circle-active-border" class="main-content__circle-active-border">
+                    <canvas class="counter" width="48" height="48" id="main-content__circle-canvas"></canvas>
+                  </div>
+                </div>
+
+              </a>
+            </div>
+
+
+          </div>
+         
+
+         
         
-        <div class="main-content__date-container">
-          <span class="main-content__date num transition-textright delay3">2019</span>
         </div>
 
-        <h1 class="main-content__title heading">
-          <span class="main-content__title-part">
-            <span class="transition-textup delay1">Rapport</span>
-          </span>
-           <span class="main-content__title-part">
-            <span class="transition-textup delay2">de stage</span>
-          </span>
-        </h1>
+      </div>
 
-        <div class="main-content__author-container">
-           <p class="main-content__author"><a href="">Frédéric <span>Randriamihaja</span></a></p>
+    <div class="main-content__page transition-up">
+      <div class="main-content__page-inner">
+        <div class="main-content__page-content text">
+
+          <div class="main-content__title-num-container">
+            <span class="main-content__title-num heading transition-textright delay1">0</span>
+            <span class="main-content__title-num heading transition-textright delay2b">4</span>
+            <span class="main-content__title-num heading transition-textup delay3">.</span>
+          </div>
+
+          <div class="main-content__title-container">
+             <h1 class="main-content__title heading transition-textup delay4">Une industrialisation en faveur de l’avènement des web apps et applications mobiles.</h1>
+          </div>
+
+          <p>Avec l’amélioration de la technologie dans le secteur du web, dorénavant la priorité n’est plus dans la création de site internet mais plutôt des applications, mobile ou web. La création d’application est plus complexe donc plus valorisant pour un développeur. Les applications peuvent exploiter des technologies plus avancées permettant de plus grande chose comparée à un site internet : la réalité virtuelle en est un très bon exemple. </p>
+
+          <p>Le futur de la technologie web réside dans les applications et l’intelligence artificielle, ainsi toute les avancés technologique sont dirigés dans l’élaboration d’outils allant dans ce sens. De ce fait, pour rester pertinent, les développeurs modernes se doivent d’évoluer et devenir plus compétent. Pour celà, soit ils se spécialisent afin de devenir développeur créatif ayant toutes les connaissances dans le design UX et Ui, soit ils sont inévitablement obligés de sortir de leur zone de confort et peut-être envisager devenir développeur full-stack pour ensuite devenir ingénieur.</p>
+      
+
         </div>
         
-        <div class="main-content__degree-container">
-          <p class="main-content__degree heading">
-            <span class="main-content__degree-label">Licence webdesign</span>
-            <span class="main-content__degree--morph"></span>
-          </p>
-        </div>
-
-        <a class="main-btn heading" href="./introduction.html">
-          <span>Lire</span> 
-        </a>
-
-        <button class="main-btn dwn heading" type="submit" onclick="window.open('rapport_stage_2019_randriamihaja.pdf')">Télécharger PDF</button>
-
       </div>
     </div>
 
@@ -168,7 +196,6 @@
   crossorigin="anonymous"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
 
 <script type="text/javascript" src="lib/gsap/CustomEase.min.js"></script>
 <script type="text/javascript" src="lib/gsap/TweenMax.min.js"></script>
@@ -183,7 +210,3 @@
 
 </body>
 </html>
-
-<!-- todo
-- current menu
- -->

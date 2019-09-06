@@ -60,7 +60,8 @@
           <ul>
             <li class="heading"><span class="num">1.1.</span> Sa place, sa force et sa démarche</li>
             <li class="heading"><span class="num">1.2.</span> Sa vision de la performance</li>
-            <li class="heading"><span class="num">1.3.</span> Son équipe polyvalente</li>
+            <li class="heading"><span class="num">1.3.</span> Son équipe polyvalente
+            </li>
           </ul>
         </li>
 
@@ -119,40 +120,80 @@
 <main class="main-content">
 
   <div id="swup" class="main-content__inner">
-     
-    <div class="main-content__splash-container transition-up">
-      <div class="main-content__splash">
+
+      <div class="main-content__page-nav transition-up">
+         
+        <div class="main-content__page-nav-inner">
+
+          <div class="main-content__page-nav-content">
+
+            <div class="main-content__page-pagin-contn">
+              <p class="num">00</p>
+              <div></div>
+              <p class="num">05</p>
+            </div>
+
+            <div class="main-content__page-controlers">
+
+              <a class="link main-content__page-link" href="./index.html">
+                <img src="./src/img/icon-prev.svg">
+              </a>
+
+              <a class="link main-content__page-link" href="./partie-1.html">
+                <img src="./src/img/icon-next.svg">
+
+               <div class="main-content__circle-container">
+                  <div id="main-content__circle-active-border" class="main-content__circle-active-border">
+                    <canvas class="counter" width="48" height="48" id="main-content__circle-canvas"></canvas>
+                  </div>
+                </div>
+
+              </a>
+            </div>
+
+            
+           <!--  <div class="main-content__page-anchors">
+              <div class="main-content__page-step"><a href="#"></a></div>
+               <div class="main-content__page-step"><a href="#"></a></div>
+              <div class="main-content__page-step-line"></div>
+            </div> -->
+            
+          </div>
+         
+
+         
         
-        <div class="main-content__date-container">
-          <span class="main-content__date num transition-textright delay3">2019</span>
         </div>
 
-        <h1 class="main-content__title heading">
-          <span class="main-content__title-part">
-            <span class="transition-textup delay1">Rapport</span>
-          </span>
-           <span class="main-content__title-part">
-            <span class="transition-textup delay2">de stage</span>
-          </span>
-        </h1>
+      </div>
 
-        <div class="main-content__author-container">
-           <p class="main-content__author"><a href="">Frédéric <span>Randriamihaja</span></a></p>
+    <div class="main-content__page transition-up">
+      <div class="main-content__page-inner">
+        <div class="main-content__page-content text">
+
+          <div class="main-content__title-num-container">
+            <span class="main-content__title-num heading transition-textright delay1">0</span>
+            <span class="main-content__title-num heading transition-textright delay2b">0</span>
+            <span class="main-content__title-num heading transition-textup delay3">.</span>
+          </div>
+
+          <div class="main-content__title-container">
+             <h1 class="main-content__title heading transition-textup delay4">Introduction</h1>
+          </div>
+
+          <p>Dans le cadre de ma réalisation professionnel de fin d’études j’ai été amené à faire un stage de 4 mois en entreprise. Avec la recommandation d’un de mes professeurs, j’ai pu effectuer mon stage au sein de la petite agence de design global Icilaba Creation.</p>
+
+          <p>Ce stage a été l’opportunité pour moi de mettre en pratique dans de vrais projets d’entreprise, mes compétences acquises durant l’ensemble de mon cursus universitaire dans le domaine du web et de gagner de l’expérience professionnel pour mon futur projet de carrière.</p>
+
+          <p>L’objectif de ce stage a été de tirer profit de mon profil polyvalent afin d’aider l’entreprise dans la réalisation de sites internet. En effet, ma première mission a été de développé à partir d’une maquette Sketch et avec l’aide et les indications de mes collègues, un site internet dynamique pour Biogenouest. J’ai également développé le site internet de l’agence Spiralys et maquetté certaines parties du site. J’ai aussi pu participer à la conception et au développement d’un site e-commerce. Finalement, j’ai été mis en contact avec la technologie Angular, pour intégrer une page d’une application web. </p>
+
+          <p><strong>Remerciement</strong><br>Avant d'entrer directement en matière il me semble opportun de commencer ce rapport par des remerciements, à l’ensemble de l'équipe d’Icilaba Creation pour son chaleureux accueil mais aussi pour sa confiance qui m'a permis de m'accomplir dans mes missions, et aussi à mes professeurs de la Licence Webdesign Sensoriel.</p>
+
+          <p><strong>Problématique</strong><br>L’industrialisation des développements de site internet laisse-t-elle place à la créativité ?</p>
+
+
         </div>
         
-        <div class="main-content__degree-container">
-          <p class="main-content__degree heading">
-            <span class="main-content__degree-label">Licence webdesign</span>
-            <span class="main-content__degree--morph"></span>
-          </p>
-        </div>
-
-        <a class="main-btn heading" href="./introduction.html">
-          <span>Lire</span> 
-        </a>
-
-        <button class="main-btn dwn heading" type="submit" onclick="window.open('rapport_stage_2019_randriamihaja.pdf')">Télécharger PDF</button>
-
       </div>
     </div>
 
@@ -168,7 +209,6 @@
   crossorigin="anonymous"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
 
 <script type="text/javascript" src="lib/gsap/CustomEase.min.js"></script>
 <script type="text/javascript" src="lib/gsap/TweenMax.min.js"></script>
@@ -183,7 +223,3 @@
 
 </body>
 </html>
-
-<!-- todo
-- current menu
- -->
