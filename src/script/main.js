@@ -281,11 +281,6 @@ menu();
 
 const menuItemManager = ()=>{
 	
-	console.log('-- github --')
-	console.log( window.location.pathname.split.length )
-	console.log( window.location.pathname.split('/') );
-	console.log( window.location.pathname.split('/')[ window.location.pathname.split.length ])
-	
 	let page = window.location.pathname.split('/')[ window.location.pathname.split.length ].split('.')[0];
 
 	const switchCurrentItem = ( path )=>{
