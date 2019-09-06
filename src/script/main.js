@@ -1,7 +1,7 @@
 $(function(){
 
 
-console.log('---- LOCAL ----');
+console.log('---- GITHUB ----');
 
 jQuery.fn.exists = function () {
     return this.length !== 0;
