@@ -290,9 +290,6 @@ const menuItemManager = ()=>{
 	console.log( window.location.pathname.split('/')[ window.location.pathname.split.length ])
 	
 	let page = window.location.pathname.split('/')[ window.location.pathname.split.length ].split('.')[0];
-	let page = window.location.pathname.split('/')[ window.location.pathname.split.length ].split('.')[0];
-
-
 
 	const switchCurrentItem = ( path )=>{
 		const dir = './';
