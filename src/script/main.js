@@ -308,7 +308,7 @@ const menuItemManager = ()=>{
 	const changeActiveMenuOnUrlPopstate = ( )=>{
 		document.addEventListener('swup:contentReplaced', event => {
 
-			let page = window.location.pathname.split('/')[ window.location.pathname.split.length ].split('.')[0];
+			let page = window.location.pathname.split('/')[ window.location.pathname.split.length - 1 ].split('.')[0];
 		    $('.main-header__menu-item').removeClass('is-current');
 		    switchCurrentItem( page );
 		});
